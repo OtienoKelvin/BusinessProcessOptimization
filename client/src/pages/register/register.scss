@@ -1,0 +1,126 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        height: 90vh;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+
+        .left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient( 45deg, #71b7e6, #3C40BC);
+            padding: 10px 20px;
+            color: white;
+            gap: 30px;
+            justify-content: center;
+
+            h1 {
+                font-size: 40px;
+                
+            }
+
+            p{
+                font-size: 1.5rem;
+            }
+
+            span{
+                color: aqua;
+                font-size: 1rem;
+            }
+
+            button{
+                border: none;
+                background-color: #F8ECFF;
+                color: #3C40BC;
+                padding: 10px 20px;
+                border-radius: 10px;
+                font-size: 1.2rem;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+        }
+
+        .right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 30px;
+            gap: 20px;
+
+            h1{
+                font-size: 1.5rem;
+            }
+
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                width: 100%;
+                overflow: auto;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+                .input-field {
+                    display: flex;
+                    flex-direction: column;
+                    gap : 5px;
+
+                    input {
+                        padding: 8px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        outline: none;
+                        font-size: 1rem;
+                        
+                        &:focus {
+                            border: 1px solid #3C40BC;
+                            box-shadow: 0 0 5px rgba(60, 64, 188, 0.5);
+                            transition: all 0.3s ease;
+                        }
+                       
+                    }
+
+                    .error {
+                        color: red;
+                        font-size: 0.8rem;
+                    }
+                }
+
+                button {
+                    margin-top: 5px;
+                    border: none;
+                    background-color: #3C40BC;
+                    color: #F8ECFF;
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
